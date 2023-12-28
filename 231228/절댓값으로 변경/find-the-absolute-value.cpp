@@ -3,9 +3,9 @@
 
 using namespace std;
 
-void func(int n, int *a){
+void func(int n, int a[]){
     for (int i =0 ; n>i; i++){
-        *(a+i) = abs(*(a+i));
+        a[i] = abs(a[i]);
     }
 }
 
