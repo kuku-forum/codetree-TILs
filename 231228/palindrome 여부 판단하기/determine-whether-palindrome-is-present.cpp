@@ -3,13 +3,13 @@
 
 using namespace std;
 
-bool check(string *tmp){
+bool check(string &tmp){
 
 
-    int len = (*tmp).length() - 1;
+    int len = tmp.length() - 1;
     
     for (int i = 0; i <= len; i++){
-        if( (*tmp)[i] != (*tmp)[len -i]){
+        if( tmp[i] != tmp[len -i]){
             return false;
         }
     }
@@ -23,7 +23,7 @@ int main() {
     string str;
     cin >> str;
 
-    if (check(&str))
+    if (check(str))
         cout << "Yes";
     else
         cout << "No"; 
