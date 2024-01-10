@@ -11,8 +11,7 @@ int main() {
     int tmp;
 
     for(int i = 0; N> i; i++){
-        cin >> tmp;
-        arr[i] = tmp;
+        cin >> arr[i];
 
         if(i%2 == 0){
             sort(arr, arr+i+1);
