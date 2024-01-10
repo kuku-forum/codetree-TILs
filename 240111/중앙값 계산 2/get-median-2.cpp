@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     // 여기에 코드를 작성해주세요.
 
-    int N, arr[10] ={};
+    int N, arr[100] ={};
     cin >> N;
     int tmp;
 
