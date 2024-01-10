@@ -24,6 +24,7 @@ int main() {
         if(arr1[i] != arr2[i]){
             flag = true;
             cout << "No";
+            break;
         }
     }
 
