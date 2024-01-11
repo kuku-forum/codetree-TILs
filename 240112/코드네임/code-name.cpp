@@ -8,12 +8,10 @@ class Info{
         char name;
         int num;
 
-        Info(char name, int num){
+        Info(char name = ' ', int num=0){
             this->name = name;
             this->num = num;
         }
-        
-        Info() {}
 
 } info[5];
 
