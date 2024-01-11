@@ -12,14 +12,15 @@ class Info{
             this->name = name;
             this->num = num;
         }
-
+        
         Info() {}
-};
+
+} info[5];
 
 int main() {
     // 여기에 코드를 작성해주세요.
 
-    Info info[5];
+    
 
     for (int i = 0; 5>i; i++){
         cin >> info[i].name >> info[i].num;
