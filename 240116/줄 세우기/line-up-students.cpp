@@ -30,14 +30,14 @@ int main() {
     cin >> n;
 
     for (int i=0; n>i; i++){
-        cin >> info[i].w >> info[i].h;
+        cin >> info[i].h >> info[i].w;
         info[i].i = i+1;
     }
 
     sort(info, info+n, cmp);
 
     for (int i=0; n>i; i++)
-        cout << info[i].w << ' ' << info[i].h << ' ' << info[i].i << endl;
+        cout << info[i].h << ' ' << info[i].w << ' ' << info[i].i << endl;
 
     return 0;
 }
