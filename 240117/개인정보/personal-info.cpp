@@ -32,6 +32,9 @@ int main() {
         cin >> info[i].name >> info[i].h >> info[i].w;
     }
 
+    cout << fixed;
+    cout.precision(1);
+
     sort(info, info+5, cmpN);
     cout << "name" << endl;
 
