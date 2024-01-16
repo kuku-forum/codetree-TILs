@@ -19,11 +19,9 @@ class Info{
 bool cmp(const Info &a, const Info &b){
     int distA = abs(a.x) + abs(a.y);
     int distB = abs(b.x) + abs(b.y);
-    int minA = min(a.x, a.y);
-    int minB = min(b.x, b.y);
 
     if (distA == distB)
-        return minA < minB;
+        return a.idx < b.idx;
     return distA < distB;
 }
 
