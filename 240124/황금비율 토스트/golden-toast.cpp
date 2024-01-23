@@ -23,7 +23,7 @@ int main() {
         cin >> a;
 
         if(a=='L'){
-            if(it != l.begin())
+            if(it != --l.begin())
                 it--;
         }
         else if(a=='R'){
