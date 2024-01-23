@@ -7,8 +7,10 @@ int main() {
     int n, m;
     cin >> n >> m;
     list<char> l;
-    list<char>::iterator it;
+    list<char>::iterator it, start;
 
+    start = l.begin();
+    start--;
     for (int i= 0; n >i; i++){
         char c;
         cin >> c;
@@ -22,8 +24,9 @@ int main() {
         char a, b;
         cin >> a;
 
+
         if(a=='L'){
-            if(it != --l.begin())
+            if(it != start)
                 it--;
         }
         else if(a=='R'){
