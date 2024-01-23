@@ -38,7 +38,7 @@ int main() {
         else if(a=='P'){
             cin >> b;
             l.insert(it, b);
-            l++;
+            it++;
         }
         
     }
