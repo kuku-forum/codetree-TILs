@@ -17,19 +17,22 @@ int main() {
     }
 
     it = l.end();
-    
+
     for (int i=0; m> i; i++){
         char a, b;
         cin >> a;
 
         if(a=='L'){
-            it--;
+            if(it != l.begin())
+                it--;
         }
         else if(a=='R'){
-            it++;
+            if(it != l.end())
+                it++;
         }
         else if(a=='D'){
-            l.erase(it);
+            if(it != l.end())
+                l.erase(it);
         }
         else if(a=='P'){
             cin >> b;
