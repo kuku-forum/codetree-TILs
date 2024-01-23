@@ -17,6 +17,7 @@ int main() {
     }
 
     it = l.end();
+    
     for (int i=0; m> i; i++){
         char a, b;
         cin >> a;
