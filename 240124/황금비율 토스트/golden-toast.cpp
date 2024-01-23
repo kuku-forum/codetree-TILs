@@ -7,10 +7,8 @@ int main() {
     int n, m;
     cin >> n >> m;
     list<char> l;
-    list<char>::iterator it, start;
+    list<char>::iterator it;
 
-    start = l.begin();
-    start--;
     for (int i= 0; n >i; i++){
         char c;
         cin >> c;
@@ -26,7 +24,7 @@ int main() {
 
 
         if(a=='L'){
-            if(it != start)
+            if(it != l.begin())
                 it--;
         }
         else if(a=='R'){
@@ -40,6 +38,7 @@ int main() {
         else if(a=='P'){
             cin >> b;
             l.insert(it, b);
+            l++;
         }
         
     }
