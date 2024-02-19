@@ -22,10 +22,7 @@ int main() {
                     s.push(str[i]);
             }
             else if(s.top() == ')' ){
-                if(str[i] == '(') 
-                    s.pop();
-                else
-                    s.push(str[i]);
+                s.push(str[i]);
             }
         }
     }
